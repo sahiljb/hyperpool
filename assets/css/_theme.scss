@@ -1,0 +1,156 @@
+h1 {
+	font-size: 50px;
+	line-height: 65px;
+}
+
+h2 {
+	font-size: 42px;
+	line-height: 55px;
+}
+
+h3 {
+	font-size: 36px;
+	line-height: 47px;
+}
+
+h4 {
+	font-size: 28px;
+	line-height: 37px;
+}
+
+h5 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+h6 {
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.h7 {
+	font-size: 18px;
+	line-height: 25px;
+}
+
+p, a, li, td, span {
+	font-size: 18px;
+	line-height: 29px;
+}
+
+a {
+	text-decoration: none;
+	color: currentColor;
+}
+
+.container {
+	max-width: $container;
+	margin: 0 auto;
+	
+	&-full {
+		max-width: $container-full;
+		margin: 0 auto;
+	}
+}
+
+header {
+	margin-top: 33px;
+	height: 48px;
+
+	$header-el: "header";
+
+	.#{$header-el}-wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.#{$header-el}-menu {
+		&__items {
+			display: flex;
+			gap: 24px;
+
+			a {
+				color: $white;
+			}
+		}
+	}
+
+	.#{$header-el}-cta {
+		&__button {
+			background-color: $white;
+			padding: var(--padding-y, 14px) var(--padding-x, 24px);
+			border-radius: var(--btn-radius, 100px);
+
+			&-link {
+				font-style: normal;
+				font-weight: 700;
+				font-size: 15px;
+				line-height: 20px;
+				color: $dark-color;
+			}
+		}
+	}
+}
+
+main {
+	$hero-el: "hero";
+
+	.#{$hero-el}-wrapper {
+		background-image: url(../img/hero-img.png);
+		mix-blend-mode: lighten;
+		background-repeat: no-repeat;
+		background-position: center right;
+		
+		.#{$hero-el} {
+			min-height: 700px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
+			&__text, &__img {
+				width: 50%;
+			}
+	
+			&__text {
+				h1, span {
+					font-family: 'Satoshi';
+					font-style: normal;
+					font-weight: 700;
+					font-size: 92px;
+					line-height: 124px;
+					letter-spacing: 0.01em;
+					text-transform: uppercase;
+					color: #FFFFFF;
+				}
+	
+				h1 {
+					span {
+						display: block;
+						color: $spring-green;
+					}
+				}
+	
+				p {
+					font-family: 'Clash Grotesk';
+					font-style: normal;
+					font-weight: 500;
+					font-size: 18px;
+					line-height: 22px;
+					letter-spacing: 0.02em;
+					color: #FFFFFF;
+				}	
+			}
+		}
+	}
+
+}
+
+.btn {
+	border-radius: 100px;
+	padding: var(--padding-y, 28px) var(--padding-x, 17px);
+
+	&-green {
+		background-color: #66FD94;
+		color: #0A0010;
+	}
+}

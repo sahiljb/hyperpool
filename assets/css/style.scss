@@ -1,0 +1,10 @@
+@import 'reset';
+@import 'variables';
+@import 'theme';
+
+body {
+	background-color: $background-color;
+	background-image: url('../img/top.svg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}

@@ -1,0 +1,279 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v5.0.2 | 20191019
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu,
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 65px;
+}
+
+h2 {
+  font-size: 42px;
+  line-height: 55px;
+}
+
+h3 {
+  font-size: 36px;
+  line-height: 47px;
+}
+
+h4 {
+  font-size: 28px;
+  line-height: 37px;
+}
+
+h5 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+h6 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.h7 {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+p, a, li, td, span {
+  font-size: 18px;
+  line-height: 29px;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container-full {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 33px;
+  height: 48px;
+}
+header .header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+header .header-menu__items {
+  display: flex;
+  gap: 24px;
+}
+header .header-menu__items a {
+  color: #FFFFFF;
+}
+header .header-cta__button {
+  background-color: #FFFFFF;
+  padding: var(--padding-y, 14px) var(--padding-x, 24px);
+  border-radius: var(--btn-radius, 100px);
+}
+header .header-cta__button-link {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  color: #0A0010;
+}
+
+main .hero-wrapper {
+  background-image: url(../img/hero-img.png);
+  mix-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+main .hero-wrapper .hero {
+  min-height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .hero-wrapper .hero__text, main .hero-wrapper .hero__img {
+  width: 50%;
+}
+main .hero-wrapper .hero__text h1, main .hero-wrapper .hero__text span {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 92px;
+  line-height: 124px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+main .hero-wrapper .hero__text h1 span {
+  display: block;
+  color: #67FE94;
+}
+main .hero-wrapper .hero__text p {
+  font-family: "Clash Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+
+.btn {
+  border-radius: 100px;
+  padding: var(--padding-y, 28px) var(--padding-x, 17px);
+}
+.btn-green {
+  background-color: #66FD94;
+  color: #0A0010;
+}
+
+body {
+  background-color: #0A0010;
+  background-image: url("../img/top.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
